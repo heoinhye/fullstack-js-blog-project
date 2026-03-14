@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.main-container {
+  /* 화면 전체 높이를 기준으로 중앙에 맞추고 싶을 때 */
+  display: flex;
+  flex-direction: column;   /* 가로가 아닌 세로 방향 정렬 */
+  justify-content: center;  /* 수직 중앙 정렬 */
+  align-items: center;      /* 수평 중앙 정렬 */
+  min-height: 80vh;         /* 헤더/푸터를 제외한 적절한 높이 설정 */
+  text-align: center;       /* 텍스트 자체도 중앙 정렬 */
+  padding: 0 20px;          /* 좌우 여백 */
+}

@@ -10,11 +10,14 @@ app.use(morgan("dev"));
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// 홈 페이지 경로
 app.get("/", (req, res) => {
-  res.render("index.ejs", { content: "Hello from Jane in Windsor!" });
+  res.render("index.ejs", { content: "Made with ❤️ in Windsor, Ontario 🇨🇦" });
 });
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}.`);
+});
+
+app.get("/simon", (req, res) => {
+  res.render("simon/simon.ejs", { content: "Hello!" });
 });
